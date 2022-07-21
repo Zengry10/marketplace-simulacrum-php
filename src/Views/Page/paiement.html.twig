@@ -1,0 +1,65 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/paiement.css">
+{% endblock %}
+
+
+{% block title  %}{% endblock %}
+
+{% block content %}
+
+    <div class="containerPaiement">
+        <p class="paiement">Paiement</p>
+
+        <div>
+            <label for="" id="mode">Sélectionner un mode de paiement :</label> <br>
+
+            <div class="radCart">
+                <input type="radio" name="paiement" id="carte">
+                <label for="carte" class="bk">Carte bancaire</label> <br>
+            </div>
+            <br>
+            <div class="paypalCenter">
+                <input type="radio" name="paiement" id="carte">
+                <label for="carte" class="bkk"><img src="http://assets.stickpng.com/images/580b57fcd9996e24bc43c530.png" alt="" srcset=""></label>
+            </div>
+        </div>
+
+        <div class="containerInput">
+
+            <div class="labelInput">
+                <label for="numero">Numéro de carte</label>
+                <br>
+                <input type="text" id="numero" placeholder="XXXX-XXXX-XXXX">
+            </div>
+
+            <div class="labelInput">
+                <label for="numero">Date d'expiration</label>
+                <br>
+                <input type="text" id="numero" placeholder="XX-XX">
+            </div>
+
+
+            <div class="labelInput">
+                <label for="numero">Code de sécurité</label>
+                <br>
+                <input type="text" id="numero" placeholder="XXX">
+            </div>
+
+        </div>
+
+        <div class="containerBottom">
+            <div class="left">
+                <p class="adresse">Adresse de facturation :</p>
+                <p>{{ data.firstname }} {{ data.lastname }}</p>
+                <p>{{ data.adresse }}</p>
+                <p>{{ data.city }} - {{ data.codepostal }}</p>
+                <p>{{ data.country }}</p>
+            </div>
+            <div class="right">
+                <a href="./validate"><div class="continuer">Continuer</div></a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

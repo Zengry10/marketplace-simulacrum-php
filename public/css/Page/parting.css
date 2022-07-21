@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap");
+body {
+  font-family: 'League Spartan', sans-serif; }
+  body .part {
+    padding: 50px 150px 100px 150px; }
+    body .part h1 {
+      display: flex;
+      justify-content: center;
+      font-size: 32px; }
+    body .part a {
+      text-decoration: none;
+      font-size: 26px;
+      text-decoration: underline 2px #7FCCC5;
+      color: black; }
+    body .part .pPartner {
+      margin: 70px 0; }
+      body .part .pPartner p {
+        margin: 10px 0;
+        font-size: 24px; }
+    body .part .did {
+      width: 100%;
+      display: flex;
+      justify-content: center; }
+      body .part .did .ligne {
+        height: 1px;
+        width: 600px;
+        background-color: #7FCCC5; }
+    body .part .samText {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      body .part .samText a {
+        margin-top: 30px;
+        text-decoration: none; }
+      body .part .samText .savoir {
+        display: flex;
+        justify-content: center;
+        color: #00BFB2;
+        font-family: 'League Spartan', sans-serif;
+        font-size: 22px;
+        align-items: center;
+        text-decoration: none; }
+      body .part .samText p {
+        font-size: 24px;
+        margin: 4px 0; }
+      body .part .samText .bien {
+        margin-top: 20px; }
+      body .part .samText img {
+        height: 100px;
+        width: 300px;
+        display: flex;
+        justify-content: center;
+        margin: 100px 0 50px 500px; }
+        body .part .samText img .cosm {
+          width: 10px;
+          height: 100px;
+          margin-bottom: 50px; }
+
+/*# sourceMappingURL=style.css.map */

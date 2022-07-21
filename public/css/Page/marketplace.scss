@@ -1,0 +1,49 @@
+main.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 150px;
+
+  img {
+    width: 100%;
+  }
+
+  section {
+    padding: 30px 0;
+
+    div.products {
+      width: 100%;
+      display: flex;
+      gap: 5%;
+
+      article {
+        width: 30%;
+
+        a {
+          width: 100px;
+          height: 100px;
+
+          div.image {
+            height: 200px;
+            background-size: cover;
+            border: 1px solid #acacac;
+            border-radius: 6px;
+          }
+        }
+
+        div.description {
+          padding: 0px 20px 14px 0px;
+
+          .title {
+            font-size: 18px;
+            margin-bottom: 0;
+          }
+
+          .price {
+            border-bottom: 1px solid #00BFB2;
+          }
+        }
+      }
+    }
+  }
+}

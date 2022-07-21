@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/marketplace.css">
+{% endblock %}
+
+{% block title  %}TMH - Marketplace{% endblock %}
+
+{% block content %}
+    <img src="/images/banner.png"/>
+
+    {% for key, category in categories %}
+        <section>
+            <h1>{{ key }}</h1>
+
+            <div class="products">
+
+                {% for product in category %}
+                    <article>
+                        <a href="/marketplace/product/{{ product.id }}"><div style="background-image: url('/images/product/{{ product.image1 }}');" class="image"></div></a>
+                        <div class="description">
+                            <p class="title">{{ product.name }}</p>
+                            <span class="price">{{ product.price }} &euro;</span>
+                        </div>
+                    </article>
+                {% endfor %}
+            </div>
+        </section>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap");
+
+main.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: 'League Spartan', sans-serif; }
+
+.containerPaiement {
+    padding: 30px 30px 30px;
+    border: 1px solid rgb(201, 193, 193);
+    border-radius: 10px;
+    margin: 0 0 20px 0;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    width: 690px; }
+.containerPaiement .paiement {
+    font-size: 28px;
+    margin-bottom: 20px; }
+.containerPaiement .containerInput {
+    display: flex;
+    gap: 20px; }
+.containerPaiement label {
+    margin-left: 20px; }
+.containerPaiement .paypalCenter {
+    display: flex;
+    align-items: flex-start;
+    width: 150px; }
+.containerPaiement .paypalCenter input {
+    color: red;
+    background-color: red; }
+.containerPaiement #mode {
+    font-size: 24px;
+    margin: 0; }
+.containerPaiement img {
+    height: 20px;
+    width: 70px; }
+.containerPaiement .radCart {
+    margin-top: 20px;
+    display: flex;
+    align-items: flex-start;
+    width: 300px;
+    align-items: center; }
+.containerPaiement input {
+    height: 20px;
+    width: 190px;
+    border-radius: 7px;
+    border: 1px solid #d7cccc;
+    padding-left: 10px;
+    margin-left: 15px; }
+.containerPaiement #carte {
+    margin-left: 20px;
+    margin-right: 0;
+    width: 20px;
+    color: red;
+    background-color: red; }
+.containerPaiement .containerBottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; }
+.containerPaiement .containerBottom .adresse {
+    margin-bottom: 20px; }
+.containerPaiement .containerBottom p {
+    margin: 2px 0; }
+.containerPaiement .containerBottom a {
+    text-decoration: none; }
+.containerPaiement .containerBottom .continuer {
+    background-color: #00C3B2;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration: none; }
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,114 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="./css/Page/home.css">
+{% endblock %}
+
+{% block js %}
+    <script src="/js/Page/home.js"></script>
+{% endblock %}
+
+{% block title  %}{% endblock %}
+
+{% block content %} 
+    
+    <div class="reserve">
+        <p class="facon">Une nouvelle facon d'imaginer ses rénovations</p>
+        <p class="test">Testez l'experience Try My House</p>
+
+        <a href="#" class="reserveHouse">
+            <p class="colorReserve">Réserver</p>
+        </a>
+    </div>  
+
+    <section aria-label="Newest Photos">
+        <div class="testHouse">
+            <p>Nos Test House</p>
+        </div>
+
+        <div class="carousel" data-carousel>
+            <button class="carousel-button prev" data-carousel-button="prev">&#8656;</button>
+            <button class="carousel-button next" data-carousel-button="next">&#8658;</button>
+
+            <ul data-slides>
+                <li class="slide" data-active>
+                    <img src="./images/caroussel1.png" alt="Nature Image #1">
+                </li>
+
+                <li class="slide">
+                    <img src="./images/caroussel2.png" alt="Nature Image #2">
+                </li>
+
+                <li class="slide">
+                    <img src="./images/caroussel3.png" alt="Nature Image #3">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <div class="testHouse">
+        <p>Les villes les plus attractives</p>
+    </div>
+
+    <div class="bigContainerCity">
+        <a href="/location/house/1" class="Paris"></a>
+        <a href="/location/house/2" class="Bordeaux"></a>
+        <a href="/location/house/3" class="Clermont"></a>
+        <a class="Caen"></a>
+    </div>
+
+    <div class="backgroundTkt">
+        <div class="description">
+            <h1>Try my House qu'est ce que c'est ?</h1>
+
+            <div class="firstP">
+                <p>Test my house c'est la nouvelle facon de se projeter dans ses futurs rénovations ou</p>
+                <p>achats de bien tout en respectant l'environnement.</p>
+                <p>Nous combattons la sur-consommation en permettant de visualiser</p>
+                <p>ses prochaines rénovations dans une maison pendant un certain temps.</p>
+            </div>
+            
+            <div class="secondP">
+                <p>Nos partenaires sont choisis grace à des critères éco-responsables</p>
+                <p>pour s'assurer que nos rénovations sont bonnes pour la planète.</p>
+            </div>
+
+            <a href="#"><p class="savoir">En savoir plus &nbsp; <i class="fa-solid fa-right-long"></i></p></div></a> 
+    </div>
+
+    <div class="testHouse">
+        <p>Nos partenaires</p>
+    </div>
+        <div class="contPartner">
+            <div class="lignePart">
+                <img src="./images/partenaire1.png" alt="" srcset="" class="one">
+                <img src="./images/partenaire2.png" alt="" srcset="" class="two">
+            </div>
+
+            <div class="lignePart">
+                <img src="./images/partenaire3.png" alt="" srcset="" class="three">
+                <img src="./images/partenaire4.png" alt="" srcset="" class="four">
+            </div>
+
+            <div class="lignePart">
+                <img src="./images/partenaire5.png" alt="" srcset="" class="three">
+                <img src="./images/partenaire6.png" alt="" srcset="" class="four">
+            </div>
+        </div>
+
+     <a href="#"><p class="savoir">En savoir plus &nbsp; <i class="fa-solid fa-right-long"></i></p></a> 
+
+    <div class="testHouse">
+        <p>Newsletter</p>
+    </div>
+
+    <div class="pContainer">
+        <p>Vous souhaitez etre informer des évènements de Try My House ?</p>
+        <p>Inscrivez-vous à notre newsletter pour ne rien rater !</p>
+    </div>
+
+    <div class="inputSubmit">
+        <input type="text" placeholder="E-mail">
+        <div class="submit"><p>S'inscrire</p></div>
+    </div>
+{% endblock %}

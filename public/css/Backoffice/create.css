@@ -1,0 +1,32 @@
+header {
+  border-bottom: 1px solid black;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main.content > div {
+  width: 600px;
+  margin: 20px;
+}
+main.content > div .head {
+  background-color: #EEEEEE;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px 5px 0 0;
+  border: 1px solid black;
+  border-bottom: none;
+}
+main.content > div form {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 0 0 5px 5px;
+}
+
+/*# sourceMappingURL=create.css.map */

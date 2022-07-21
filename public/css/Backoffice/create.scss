@@ -1,0 +1,33 @@
+header {
+  border-bottom: 1px solid black;
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  > div {
+    width: 600px;
+    margin: 20px;
+
+    .head {
+      background-color: #EEEEEE;
+      padding: 20px;
+      text-align: center;
+      border-radius: 5px 5px 0 0;
+      border: 1px solid black;
+      border-bottom: none;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 0 0 5px 5px;
+    }
+  }
+}

@@ -1,0 +1,83 @@
+main.content {
+  padding: 40px 150px;
+}
+main.content > a {
+  color: black;
+  font-size: 18px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #00BFB2;
+}
+main.content .product-div {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main.content .product-div .pictures {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+}
+main.content .product-div .pictures .pic1 {
+  height: 40%;
+  border-radius: 8px;
+  background: center bottom no-repeat;
+  background-size: cover;
+}
+main.content .product-div .pictures > div {
+  display: flex;
+  justify-content: space-between;
+  height: 57%;
+}
+main.content .product-div .pictures > div a {
+  background: center center no-repeat;
+  background-size: cover;
+  width: 48%;
+  border-radius: 8px;
+}
+main.content .product-div .product {
+  width: 49%;
+}
+main.content .product-div .product h1 {
+  margin: 0;
+}
+main.content .product-div .product i {
+  color: #00BFB2;
+}
+main.content .product-div .product :first-child :nth-child(3) {
+  font-size: 20px;
+}
+main.content .product-div .product > div {
+  padding: 0px 20px;
+}
+main.content .product-div .product > div .price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+main.content .product-div .product > div .price h2 {
+  margin: 0;
+}
+main.content .product-div .product > div .price p {
+  font-size: 20px;
+  margin: 0;
+}
+main.content .product-div .product > div #add-to-cart {
+  font-size: 20px;
+  background-color: #00BFB2;
+  text-align: center;
+  border-radius: 6px;
+  padding: 10px 30px;
+  color: white;
+  text-decoration: none;
+}
+main.content .product-div .product .line {
+  height: 1px;
+  background-color: #bfbfbf;
+  padding: 0;
+  margin: 30px 0px;
+}
+
+/*# sourceMappingURL=product.css.map */

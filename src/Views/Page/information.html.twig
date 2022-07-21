@@ -1,0 +1,98 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/information.css">
+{% endblock %}
+
+
+{% block title  %}{% endblock %}
+
+{% block content %} 
+    
+<div class="containerInformations">
+        <form action="./recapitulatif" method="POST" class="big-form">
+                  
+            <div class="row100">
+                
+               <div class="left">
+                <p class="connect">Informations<p>
+                    <div class="col">
+                        <div class="inputBox">
+                        <input type="text" name="firstname" id="firstname" value="{{ user.firstname }}" required>
+                            <span class="text"> Prénom</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="lastname" id="lastname" value="{{ user.lastname }}" required>
+                        <span class="text"> Nom de famille</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="numero" id="email" value="{{ user.phoneNumber }}"  required>
+                            <span class="text"> Numéro de téléphone</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="email" id="email" value="{{ user.email }}" required>
+                            <span class="text"> Adresse E-mail</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <a href=""><div class="annuler">Annuler</div></a>
+                </div>
+
+                <div class="trait"></div>
+
+                <div class="rightt">
+                    <div class="col">
+                        <div class="inputBox">
+                        <input type="text" name="adresse" id="firstname" required>
+                            <span class="text"> Adresse</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                    <div class="inputBox">
+                        <input type="text" name="country" id="lastname" required>
+                        <span class="text"> Pays</span>
+                        <span class="line"></span>
+                    </div>
+                </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="city" id="email" required>
+                            <span class="text"> Ville</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="codecity" id="email" required>
+                            <span class="text"> Code postal</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="continuer" value="Continuer"/>
+                </div>
+                </div>
+
+      </form>  
+    
+    </div>
+    
+    </div>
+{% endblock %}

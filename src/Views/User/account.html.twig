@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/account.css">
+{% endblock %}
+
+{% block js %}
+    <script src="/js/User/account.js"></script>
+{% endblock %}
+
+{% block title  %}{% endblock %}
+
+{% block content %}
+    <div class="compte">
+        <h1 class="votreCompte">Votre compte</h1>
+        <a href="#"> <div class="chevMenu"><i class="fa-solid fa-chevron-left"></i><p class="princ">Menu principal</p>
+            </div></a>
+        <p class="info">Informations du compte</p>
+    </div>
+    <div class="container">
+        <div class="left">
+            <div class="containerA">
+                <div class="row100">
+                    <p class="lieu">Informations du compte</p>
+
+
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="email" value="{{ user.email }}" required>
+                            <span class="text"> Adresse e-mail</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="email" value="{{ user.phoneNumber }}" required>
+                            <span class="text"> Numéro de téléphone</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="inputBox">
+                            <input type="text" name="email" required>
+                            <span class="text">Date de naissance</span>
+                            <span class="line"></span>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
+            <div class="trait"></div>
+            <div class="right">
+                <div class="containerA">
+                    <div class="row100">
+
+                        <p class="lieu">Lieu de résidence</p>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="email" required>
+                                <span class="text"> Pays / Région</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="email" required>
+                                <span class="text"> Ville</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="inputBox">
+                                <input type="text" name="email" required>
+                                <span class="text"> Code postal</span>
+                                <span class="line"></span>
+                            </div>
+                        </div>
+                        <a href=""><div class="continuer">Enregistrer</div></a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="reservBott">
+        <p class="reserv">Réservations</p>
+        <p class="attente">En attente :</p>
+        <div>
+            <p class="aucune">Aucune réservation en attente. Réserver une maison</p>
+        </div>
+
+        <p class="passé">Passées :</p>
+        <p class="aucune">Aucune réservation en passée.</p>
+    </div>
+
+
+    <div class="reservBott">
+        <p class="reserv">Commandes</p>
+        <p class="attente">En attente :</p>
+        {% if commands == null %}
+            <p class="aucune">Aucune commande en attente. Passez une commande.</p>
+        {% else %}
+            <div>
+                {% for key, command in commands %}
+                    <div class="fl">
+                        <i class="fa-solid fa-circle"></i> <p class="PMaison"><u>Commande n°{{ key }} :</u> En route vers votre domicile</p>
+                    </div>
+                    {% for key, product in command %}
+                        <p class="aucune">- {{ product.name }}</p>
+                    {% endfor %}
+                    <br>
+                    <br>
+
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        <p class="passé">Passées :</p>
+        <p class="aucune">Aucune commande en passée.</p>
+    </div>
+{% endblock %}

@@ -1,0 +1,58 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/product.css">
+{% endblock %}
+
+{% block js %}
+    <script src="/js/Marketplace/product.js"></script>
+{% endblock %}
+
+{% block title  %}{% endblock %}
+
+{% block content %}
+    <a href="/marketplace">< Marketplace</a>
+
+    <div class="product-div">
+        <div class="pictures">
+            <a href="/images/product/{{ product.image1 }}" style="background-image: url('/images/product/{{ product.image1 }}')" class="pic1"></a>
+
+            <div>
+                <a href="/images/product/{{ product.image2 }}" style="background-image: url('/images/product/{{ product.image2 }}')"></a>
+                <a href="/images/product/{{ product.image3 }}" style="background-image: url('/images/product/{{ product.image3 }}')"></a>
+            </div>
+        </div>
+
+        <div class="product">
+            <div>
+                <h1>{{ product.name }}</h1>
+                <p><i class="fa-solid fa-star"></i> 4,6</p>
+                <p>🇫🇷 Fabriqué en France à la Ferté-Bernard</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div>
+                <h2>Description</h2>
+                <p style="font-size: 16px">Catégorie: {{ product.category }}</p>
+                <p>{{ product.description }}</p>
+            </div>
+
+            <div class="line"></div>
+
+            <div>
+                <div class="price">
+                    <h2>{{ product.name }}</h2>
+
+                    <p>{{ product.price }} &euro;</p>
+                </div>
+
+                {% if session.user %}
+                    <a href="/marketplace/addToCart/{{ product.id }}" id="add-to-cart">Ajouter au panier</a>
+                {% else %}
+                    <a href="/login" id="add-to-cart">Connectez-vous pour ajouter au panier</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

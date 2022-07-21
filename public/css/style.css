@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap");
+body {
+    margin: 0;
+    font-family: "League Spartan";
+}
+body header .containerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 150px;
+    align-items: center;
+}
+body header .containerTop .header-image {
+    width: 300px;
+    display: flex;
+}
+body header .containerTop .header-image i {
+    font-size: 20px;
+}
+body header .containerTop .header-image.right {
+    justify-content: flex-end;
+    align-items: center;
+}
+body header .containerTop .header-image.right .cart-ic {
+    padding: 20px;
+    color: black;
+}
+
+body header .containerTop .header-image img {
+    width: 50px;
+    margin-bottom: 4px;
+}
+body header .containerTop .accuMark {
+    display: flex;
+    gap: 20px;
+}
+body header .containerTop .accuMark a {
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+body header .containerTop .accuMark a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+body footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px 150px;
+    background-color: #F0F0F0;
+}
+body footer .containerFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+body footer .containerFooter .divLeft {
+    display: flex;
+    gap: 50px;
+}
+body footer .containerFooter .divLeft div p {
+    margin: 6px 0;
+    font-size: 16px;
+}
+body footer .containerFooter .divRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+body footer .containerFooter .divRight img {
+    width: 60px;
+}
+body footer .containerFooter .divRight h1 {
+    text-decoration: underline;
+    text-decoration-color: #00BFB2;
+    text-decoration-thickness: 2px;
+}
+body footer .containerFooter .divRight .icon {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+body footer .containerFooter .divRight .icon i {
+    font-size: 24px;
+}
+body footer .ligne {
+    width: 100%;
+    height: 2px;
+    background-color: #00BFB2;
+}
+body footer .footerCredit p {
+    margin: 0;
+}
+
+.dropbtn {
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    background-color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    right: 0px;
+    display: none;
+    justify-content: center;
+    position: absolute;
+    border: 1px solid black;
+    border-radius: 5px;
+    min-width: 160px;
+    z-index: 1;
+    background-color: white ;
+}
+
+.dropdown-content .line {
+    background-color: #b4b4b4;
+    height: 1px;
+    width: 80%;
+    margin: 0 10%;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #EEEEEE;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*# sourceMappingURL=style.css.map */

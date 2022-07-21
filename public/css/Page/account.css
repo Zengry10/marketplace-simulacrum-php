@@ -1,0 +1,208 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap");
+body {
+    font-family: 'League Spartan', sans-serif; }
+
+main.content {
+    margin-bottom: 150px;
+}
+.compte {
+    padding: 40px 150px 0; }
+.compte .info {
+    margin: 80px 0 0 0;
+    font-size: 28px; }
+.compte .princ {
+    text-decoration: underline 2px #00BFB2; }
+.compte a {
+    text-decoration: none;
+    color: black; }
+.compte .chevMenu {
+    display: flex;
+    align-items: center;
+    gap: 5px; }
+.compte .chevMenu p {
+    margin: 0; }
+
+.votreCompte {
+    display: flex;
+    justify-content: center; }
+
+.container {
+    display: flex;
+    padding: 25px 150px; }
+.container .left {
+    display: flex;
+    justify-content: space-between;
+    gap: 139px; }
+.container .right {
+    display: flex;
+    justify-content: space-between; }
+.container .trait {
+    width: 1px;
+    height: 350px;
+    background-color: #e3d1d1; }
+.container .containerA {
+    width: 500px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    background-color: white; }
+.container .containerA .row100 {
+    width: 85%;
+    position: relative; }
+.container .containerA .row100 .lieu {
+    margin: 5px 00px 0 0px;
+    font-size: 20px; }
+.container a {
+    text-decoration: none; }
+.container a .continuer {
+    background-color: #00C3B2;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-left: 305px; }
+.container .connect {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 25px;
+    margin: 50px 0 0 0; }
+.container .containerA .text {
+    color: grey; }
+.container .text:hover {
+    color: aqua; }
+.container .containerA .row100 .col {
+    position: relative;
+    width: 100%;
+    padding: 0 10px;
+    margin: 30px 0 10px -8px;
+    transition: .5s; }
+.container .containerA .row100 .inputBox {
+    border: 2px solid #5AE2DA;
+    border-radius: 5px;
+    position: relative;
+    width: 100%;
+    height: 40px; }
+.container .containerA .row100 .inputBox input, .container .containerA .row100 .inputBox .textarea textarea {
+    position: absolute;
+    width: 93%;
+    height: 100%;
+    box-shadow: none;
+    background: transparent;
+    outline: none;
+    border-radius: 9px;
+    padding: 0 7px;
+    border: 1px solid #E3E4E5; }
+.container .containerA .row100 .inputBox .text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 40px;
+    padding-left: 10px;
+    font-size: 18px;
+    display: block;
+    transition: .5s;
+    pointer-events: none; }
+.container .containerA .row100 .inputBox input:focus + .text,
+.container .containerA .row100 .inputBox input:valid + .text {
+    top: -31px;
+    left: -10px;
+    color: #13867e; }
+.container .containerA .row100 .inputBox .line {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: .5s;
+    border-radius: 2px;
+    pointer-events: none; }
+.container .containerA .row100 .inputBox input:focus ~ .line,
+.container .containerA .row100 .inputBox input:valid ~ .line {
+    height: 100%; }
+.container .containerA .row100 .inputBox .textarea {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px; }
+.container .containerA .row100 .inputBox .textarea textarea {
+    resize: none;
+    height: 100%; }
+.container .containerA .row100 .inputBox textarea:focus + .text,
+.container .containerA .row100 .inputBox textarea:valid + .text {
+    top: -38px;
+    left: -10px;
+    color: blueviolet; }
+.container .containerA .row100 .inputBox textarea:focus ~ .line,
+.container .containerA .row100 .inputBox textarea:valid ~ .line {
+    height: 100%; }
+.container .subConn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+    width: 70%;
+    cursor: pointer;
+    color: white;
+    background-color: #00BFB2;
+    border: none;
+    border-radius: 9px;
+    font-size: 20px;
+    font-weight: bold;
+    word-spacing: 4px;
+    margin-left: 60px; }
+.container .subConn:hover {
+    transition: .2s;
+    background-color: #1ab4aa; }
+.container #btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    height: 100%;
+    background-color: #F3F3F3;
+    border: transparent;
+    border-left: 1px solid #E3E4E5;
+    border-bottom-right-radius: 9px;
+    border-top-right-radius: 9px; }
+
+.reservBott {
+    padding: 40px 150px 0; }
+.reservBott .reserv {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0 50px 0;
+    font-size: 28px; }
+.reservBott .attente {
+    font-size: 20px;
+    margin: 20px 0 10px 0; }
+.reservBott .aucune {
+    margin: 5px 0 0 24px;
+    color: #968c8c;
+    font-size: 16px; }
+.reservBott .passé {
+    font-size: 20px;
+    margin: 25px 0 10px 0px; }
+
+.fl {
+    display: flex;
+    gap: 10px; }
+.fl i {
+    color: #00C3B2;
+    font-size: 12px; }
+.fl .PMaison {
+    margin: 0px 0 10px 0;
+    font-size: 17px; }
+
+.sousTitle {
+    margin: 2px 0 65px 22px;
+    color: #968c8c; }
+
+/*# sourceMappingURL=style.css.map */

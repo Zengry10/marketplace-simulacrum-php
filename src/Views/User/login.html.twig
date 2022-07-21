@@ -1,0 +1,50 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="./css/User/login.css">
+{% endblock %}
+
+{% block js %}
+    <script src="./js/User/login.js"></script>
+{% endblock %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+<div class="bloc-login">
+
+  <div class="containerA">
+    <form action="" method="POST" class="big-form">
+              <p class="connect">Connexion<p>
+        <div class="row100">
+            
+           
+            <div class="col">
+                <div class="inputBox">
+                    <input type="text" name="email" required>
+                    <span class="text"> Adresse e-mail</span>
+                    <span class="line"></span>
+                </div>
+            </div>
+            <div class="col">
+                <div class="inputBox">
+                    <input type="password" name="password" id='my-input' required>
+                    <span  class="text"> Mot de passe </span>  <button id="btn" class="btn1 btn">Afficher</button>
+                    <span class="line"></span>
+                </div>
+            </div>
+            
+        </div>
+        
+        <div class="row100">
+            <div class="col"> 
+                <input class="subConn" type="submit" name="login" value="Se Connecter">
+            </div>
+        </div> 
+         
+  </form>  
+
+</div>
+
+</div>
+{% endblock %}

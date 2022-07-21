@@ -1,0 +1,164 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Page/house.css">
+{% endblock %}
+
+{% block title  %}{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <a href="/">< Revenir au menu principal</a>
+        <div class="maison">
+            <p>Maison neuf - {{ house.city }}</p>
+            <div class="icon">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-download"></i>
+            </div>
+        </div>
+
+        <div class="containerLR">
+            <div class="leftDiv">
+                <a href="/images/house/{{ house.image1 }}" style="background: url('/images/house/{{ house.image1 }}')" class="top">
+                    
+                </a>
+                <div class="bottom">
+                    <a href="/images/house/{{ house.image2 }}" style="background-image: url('/images/house/{{ house.image2 }}')" class="firstBottom"></a>
+                    <a href="/images/house/{{ house.image3 }}" style="background-image: url('/images/house/{{ house.image3 }}')" class="secondBottom"></a>
+                </div>
+            </div>
+            <div class="night">
+                <div class="vingt">
+                    <p> <p id="cent">{{ house.nightPrice }} € </p>/ nuit</p>
+                </div>
+                <p class="star"><i class="fa-solid fa-star"></i> 4,8</p>
+                <div class="containerNight">
+                    <div class="date">
+                        <input type="date"> <i class="fa-solid fa-arrow-right-long"></i><input type="date">
+                    </div>
+                    <div class="ligne"></div>
+                    <p class="adult">2 Adultes</p>
+                </div>
+
+                <div class="frais">
+                    <p>Frais de ménage:</p>
+                    <p>80.00 &euro;</p>
+                </div>
+
+                <div class="frais">
+                    <p>Frais de service / gestion:</p>
+                    <p>50.00 &euro;</p>
+                </div>
+
+                <div class="total">
+                    <p>Total</p>
+                    <p>130.00 &euro; + {{ house.nightPrice }} &euro; / nuit</p>
+                </div>
+
+                {% if session.user %}
+                    <a href="#"><div class="reserving"><p>Réserver</p></div></a>
+                {% else %}
+                    <a href="/login"><div class="reserving"><p>Connectez-vous pour réserver</p></div></a>
+                {% endif %}
+
+            </div>
+        </div>
+
+        <div style="margin-bottom: 200px;">
+            <p class="description">Description du logement</p>
+            <p>{{ house.description }}</p>
+            <p>GES : {{ house.ges }}</p>
+            <p>DPE : {{ house.dpe }}</p>
+            <p>Mètres carrés : {{ house.sqrtMeters }}</p>
+            <p>Nombre de pièces : {{ house.nbOfRooms }}</p>
+            <p>Nombre de chambres : {{ house.nbOfChambers }}</p>
+        </div>
+
+        <p class="avis">Avis clients</p>
+
+           <div class="containerAvis">
+                <div class="containerOne">
+                   <div class="containerTop">
+
+                        <div class="partLeft">
+                            <i class="fa-solid fa-user" aria-colspan="imgLogo2"></i>
+                            <p>David <span> - décembre 2021</span></p>
+                        </div>
+                        <div class="star">
+                            <p> <i class="fa-solid fa-star"></i> 4,5</p>
+                        </div>
+                   </div>
+
+                    <div class="containerP">
+                        <p>Appartement spacieux, chaleureux et bien équipé.</p>
+                        <p>Le système de commande vocal des équipement est super</p>
+                        <p>pratique !</p>
+                    </div>
+                </div>
+
+                    <div class="containerOne">
+                        <div class="containerTop">
+
+                            <div class="partLeft">
+                                <i class="fa-solid fa-user" aria-colspan="imgLogo2"></i>
+                                <p>David <span> - décembre 2021</span></p>
+                            </div>
+                            <div class="star">
+                                <p> <i class="fa-solid fa-star"></i> 4,5</p>
+                            </div>
+                        </div>
+                        <div class="containerP">
+                            <p>Appartement spacieux, chaleureux et bien équipé.</p>
+                            <p>Le système de commande vocal des équipement est super</p>
+                            <p>pratique !</p>
+                        </div>
+                    </div>
+                </div>
+                <br>
+
+                <div class="containerAvis">
+                    <div class="containerOne">
+                        <div class="containerTop">
+     
+                             <div class="partLeft">
+                                 <i class="fa-solid fa-user" aria-colspan="imgLogo2"></i>
+                                 <p>David <span> - décembre 2021</span></p>
+                             </div>
+                             <div class="star">
+                                 <p> <i class="fa-solid fa-star"></i> 4,5</p>
+                             </div>
+                        </div>
+     
+                         <div class="containerP">
+                             <p>Appartement spacieux, chaleureux et bien équipé.</p>
+                             <p>Le système de commande vocal des équipement est super</p>
+                             <p>pratique !</p>
+                         </div>
+                    </div>
+
+                    <div class="containerOne">
+                         <div class="containerTop">
+
+                             <div class="partLeft">
+                                 <i class="fa-solid fa-user" aria-colspan="imgLogo2"></i>
+                                 <p>David <span> - décembre 2021</span></p>
+                             </div>
+                             <div class="star">
+                                 <p> <i class="fa-solid fa-star"></i> 4,5</p>
+                             </div>
+                         </div>
+                         <div class="containerP">
+                             <p>Appartement spacieux, chaleureux et bien équipé.</p>
+                             <p>Le système de commande vocal des équipement est super</p>
+                             <p>pratique !</p>
+                         </div>
+                    </div>
+                </div>
+            
+
+        <p class="localisation">Localisation du logement</p>
+        <img src="/images/map.png" alt="" srcset="" class="map">
+                
+    </div>
+
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+<link rel="stylesheet" href="/css/Page/validate.css">
+{% endblock %}
+
+
+{% block title  %}{% endblock %}
+
+{% block content %}
+
+<div class="validating">
+    <p class="bravo">Bravo !</p>
+    <p class="commande">Votre commande a bien été enregistré</p>
+    <p class="consult">Vous pouvez toujours consulter votre commande dans l'onglet "Commandes"</p>
+    <p class="mail">de votre compte ou dans votre boite mail</p>
+
+</div>
+<a href="/marketplace"><div class="continuer">Revenir au menu</div></a>
+
+
+{% endblock %}

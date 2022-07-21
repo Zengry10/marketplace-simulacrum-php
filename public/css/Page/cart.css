@@ -1,0 +1,101 @@
+main.content {
+  padding: 50px 150px 100px 150px;
+}
+main.content > a {
+  color: black;
+  font-size: 18px;
+  text-decoration-thickness: 2px;
+  text-decoration-color: #00BFB2;
+}
+main.content > div {
+  display: flex;
+  width: 100%;
+}
+main.content > div h1 {
+  font-size: 26px;
+}
+main.content > div div.cart {
+  width: 64%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main.content > div div.cart h1 {
+  margin-bottom: 0;
+}
+main.content > div div.cart .product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 30px;
+  padding: 10px 40px 15px 10px;
+  border-bottom: 2px solid #EEEEEE;
+}
+main.content > div div.cart .product a {
+  color: black;
+  text-decoration: none;
+}
+main.content > div div.cart .product .content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+main.content > div div.cart .product .content .image {
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+main.content > div div.cart .product .content .imagecontentline {
+  height: 100px;
+  width: 2px;
+  background-color: #EEEEEE;
+}
+main.content > div div.cart .product .content h2 {
+  margin: 0;
+}
+main.content > div div.cart .product .content p {
+  margin: 0;
+}
+main.content > div div.recapitulatif {
+  display: flex;
+  width: 36%;
+  gap: 20px;
+}
+main.content > div div.recapitulatif div.middleLine {
+  height: 100%;
+  width: 2px;
+  background-color: #EEEEEE;
+}
+main.content > div div.recapitulatif .content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main.content > div div.recapitulatif .content > div div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main.content > div div.recapitulatif .content > div div p {
+  margin: 0;
+  font-size: 18px;
+}
+main.content > div div.recapitulatif .content > div.line {
+  background-color: #EEEEEE;
+  width: 100%;
+  height: 1px;
+}
+main.content > div div.recapitulatif .content a {
+  color: white;
+  background-color: #00BFB2;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=cart.css.map */

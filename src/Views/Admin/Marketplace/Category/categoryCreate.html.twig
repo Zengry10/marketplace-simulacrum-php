@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Backoffice/create.css">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div>
+        <a href=".">Revenir à la liste</a>
+
+        <div class="head">Ajouter une nouvelle catégorie</div>
+
+        <form action="" method="POST">
+            <label for="name">Nom de la catégorie: </label>
+            <input type="text" name="name" id="name" required/>
+            <br>
+
+            <input type="submit" value="Créer la catégorie"/>
+        </form>
+    </div>
+{% endblock %}

@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;400&display=swap");
+body {
+    font-family: 'League Spartan', sans-serif; }
+main.content{
+    display: flex;
+    justify-content: center;
+
+}
+.containerRecap {
+    margin: 50px 0;
+    width: 900px;
+    display: flex;
+    gap: 25px;
+    background-color: white;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    padding: 30px 30px 30px; }
+.containerRecap .leftt {
+    width: 40%; }
+.containerRecap .leftt .recap {
+    font-size: 28px;
+    margin: 0; }
+.containerRecap .leftt .info {
+    margin: 40px 0 10px 0;
+    font-size: 24px;
+    text-decoration: underline 2px #00BFB2; }
+.containerRecap .leftt p {
+    margin: 7px 0; }
+.containerRecap .leftt .num {
+    margin: 7px 0;
+    text-decoration: underline 2px #00BFB2; }
+.containerRecap .ligne {
+    width: 1px;
+    height: calc(100% - 50px);
+    margin-top: 50px;
+    background-color: #cac0c0;
+    border-radius: 1px; }
+
+.containerRecap .rightt .first {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    border-bottom: 1px solid lightgray; }
+.containerRecap .rightt .first .flex {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;}
+.containerRecap .rightt {
+    width: 58%;
+}
+.containerRecap .rightt .first .flex p {
+    margin:0;}
+.containerRecap .rightt .first > div {
+    margin: 40px 0;}
+.containerRecap .rightt .first .flex .matelas {
+    font-size: 16px; }
+.containerRecap .rightt .second {
+    margin: 50px 0 10px 0; }
+.containerRecap .rightt .second p {
+    margin: 0px 0 8px 0; }
+.containerRecap .rightt .second .flex {
+    display: flex;
+    justify-content: space-between; }
+.containerRecap .rightt .prix {
+    margin: 75px 0 0 0;
+    font-size: 24px;
+    text-decoration: underline 2px #00BFB2; }
+.containerRecap .rightt p {
+    font-size: 15px; }
+.containerRecap a {
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    text-decoration: none; }
+.containerRecap a .continuer {
+    background-color: #00C3B2;
+    border-radius: 5px;
+    color: white;
+    width: 120px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;   }
+
+/*# sourceMappingURL=style.css.map */

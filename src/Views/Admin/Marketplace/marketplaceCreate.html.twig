@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Backoffice/create.css">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <div>
+        <a href=".">Revenir à la liste</a>
+
+        <div class="head">Ajouter un nouveau produit</div>
+
+        <form action="" method="POST" enctype="multipart/form-data">
+            <label for="name">Nom du produit: </label>
+            <input type="text" name="name" id="name" required/>
+            <br>
+
+            <label for="uploadedFile1">Images:</label>
+            <div>
+                <input type="file" name="uploadedFile1">
+                <input type="file" name="uploadedFile2">
+                <input type="file" name="uploadedFile3">
+            </div>
+            <br>
+
+            <label for="category">Catégorie du produit: <a href="/admin/marketplace/category/create">Créer une nouvelle catégorie</a></label>
+            <select name="category" id="category" required>
+                {% for category in categories %}
+                    <option>{{ category.name }}</option>
+                {% endfor %}
+            </select>
+            <br>
+
+            <label for="description">Description: </label>
+            <textarea id="description" name="description" required></textarea>
+            <br>
+
+            <label for="price">Prix à l'unité du produit: </label>
+            <input type="number" name="price" id="price" required/>
+            <br>
+
+            <input type="submit" value="Publier le produit"/>
+        </form>
+    </div>
+{% endblock %}

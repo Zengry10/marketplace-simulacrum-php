@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block css %}
+    <link rel="stylesheet" href="/css/Backoffice/list.css">
+{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block content %}
+    <h1>Marketplace categories back office</h1>
+
+    <table border=1>
+        <thead>
+            <tr>
+                <td>Nom de la catégorie</td>
+                <td>Actions</td>
+            </tr>
+        </thead>
+
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.name }}</td>
+                <td><button><a href="/admin/marketplace/category/delete/{{ product.id }}">Delete</a></button></td>
+            </tr>
+        {% endfor %}
+
+            <tr>
+                <td colspan="10" style="text-align: center"><a href="/admin/marketplace/category/create">+</a></td>
+            </tr>
+
+        </tbody>
+    </table>
+
+{% endblock %}
